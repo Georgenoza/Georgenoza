@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+  
+    header nav ul {
+        gap: 1.5em;
+        margin-right: 4em;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    header aside {
+        margin-left: 4rem;
+    }
+
+}
+
+
+
+@media (max-width: 580px) {
+
+    header nav label.checklabel {
+        display: block;
+    }
+
+
+    header nav ul {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: rgb(68, 68, 109);
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        transition: 0.5s all;
+        gap: 40px;
+    }
+    
+    header nav ul li a {
+        font-size: 22px;
+    }
+
+
+    header aside {
+        font-size: 25px;
+        margin-left: 2.5rem;
+    }
+
+    header nav ul li a:hover, 
+    header nav ul li a.active {
+        background: none;
+        color: aqua;
+    }
+
+    header nav input#checkbtn:checked~ul {
+        left: 0px;
+    }
+
+}
+
